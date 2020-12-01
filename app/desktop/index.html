@@ -7,6 +7,7 @@
 <html lang="en">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<head>
+		<link rel="manifest" href="/manifest.webmanifest">
 		<title>Student-Zone | Home</title>
 		<meta name='description' content='Student-Zone Is The Unoffical NVUSD Landing Page'>
 	</head>
@@ -731,6 +732,13 @@
 		</body>
 	
 		<body>
+			<script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/sw.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}
+</script>
 			<div class="navbar">
 				<a class="unactive" href="javascript:(0)" onclick="openNavs()">Apps</a>
 				<div id="myNav" class="overlay">
