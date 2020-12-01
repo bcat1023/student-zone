@@ -23,7 +23,7 @@
       "name": "Open Student-Zone",
       "short_name": "Open",
       "description": "Open Student-Zone",
-      "url": "https://student-zone.netlify.app/app/desktop/index.html",
+      "url": "https://student-zone.netlify.app/app/desktop",
       "icons": [{ "src": "/image/i01_icon.png", "sizes": "144x144" }]
     },
     {
@@ -32,6 +32,21 @@
       "description": "Open Student-Zone Radio",
       "url": "https://student-zone.netlify.app/radio",
       "icons": [{ "src": "/image/i01_icon.png", "sizes": "144x144" }]
+    }
+  ]
+   {
+      "name": "Open Play Later",
+      "short_name": "Play Later",
+      "description": "View the list of podcasts you saved for later",
+      "url": "/play-later?utm_source=homescreen",
+      "icons": [{ "src": "/icons/play-later.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "View Subscriptions",
+      "short_name": "Subscriptions",
+      "description": "View the list of podcasts you listen to",
+      "url": "/subscriptions?utm_source=homescreen",
+      "icons": [{ "src": "/icons/subscriptions.png", "sizes": "192x192" }]
     }
   ]
 }
