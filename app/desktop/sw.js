@@ -6,6 +6,7 @@ self.addEventListener('install', function(e) {
    caches.open('airhorner').then(function(cache) {
      return cache.addAll([
        '/offline.html',
+       '/index.html',
      ]);
    })
  );
