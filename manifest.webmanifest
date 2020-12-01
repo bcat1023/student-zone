@@ -1,52 +1,16 @@
 {
-  "short_name": "Student-Zone",
   "name": "Student-Zone",
-  "description": "The Offical Student-Zone App",
+  "short_name": "Student-Zone",
+  "description": "The Official Student-Zone App Is Here",
+  "lang": "en-US",
+  "start_url": "/app/desktop/index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
   "icons": [
     {
       "src": "/image/i01_icon.png",
-      "type": "image/png",
-      "sizes": "144x144"
-    },
-    {
-      "src": "/image/i01_icon.png",
-      "type": "image/png",
-      "sizes": "144x144"
-    }
-  ],
-  "start_url": "/app/desktop/index.html",
-  "background_color": "#000000",
-  "display": "minimal-ui",
-  "theme_color": "#000000",
-  "shortcuts": [
-    {
-      "name": "Open Student-Zone",
-      "short_name": "Open",
-      "description": "Open Student-Zone",
-      "url": "https://student-zone.netlify.app/app/desktop",
-      "icons": [{ "src": "/image/i01_icon.png", "sizes": "144x144" }]
-    },
-    {
-      "name": "Open Student-Zone Radio",
-      "short_name": "Open Radio",
-      "description": "Open Student-Zone Radio",
-      "url": "https://student-zone.netlify.app/radio",
-      "icons": [{ "src": "/image/i01_icon.png", "sizes": "144x144" }]
-    }
-  ]
-   {
-      "name": "Open Play Later",
-      "short_name": "Play Later",
-      "description": "View the list of podcasts you saved for later",
-      "url": "/play-later?utm_source=homescreen",
-      "icons": [{ "src": "/icons/play-later.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "View Subscriptions",
-      "short_name": "Subscriptions",
-      "description": "View the list of podcasts you listen to",
-      "url": "/subscriptions?utm_source=homescreen",
-      "icons": [{ "src": "/icons/subscriptions.png", "sizes": "192x192" }]
+      "sizes": "144x144",
+      "type": "image/png"
     }
   ]
 }
