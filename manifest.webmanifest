@@ -17,19 +17,18 @@
   "start_url": "/app/desktop/index.html",
   "background_color": "#000000",
   "display": "minimal-ui",
-  "scope": "/radio",
   "theme_color": "#000000",
   "shortcuts": [
     {
-      "name": "Student-Zone",
-      "short_name": "Student-Zone",
+      "name": "Open Student-Zone",
+      "short_name": "Open",
       "description": "Open Student-Zone",
       "url": "https://student-zone.netlify.app/app/desktop/index.html",
       "icons": [{ "src": "/image/i01_icon.png", "sizes": "144x144" }]
     },
     {
-      "name": "Student-Zone Radio",
-      "short_name": "Radio",
+      "name": "Open Student-Zone Radio",
+      "short_name": "Open Radio",
       "description": "Open Student-Zone Radio",
       "url": "https://student-zone.netlify.app/radio",
       "icons": [{ "src": "/image/i01_icon.png", "sizes": "144x144" }]
