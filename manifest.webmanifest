@@ -1,0 +1,38 @@
+{
+  "short_name": "Student-Zone",
+  "name": "Student-Zone",
+  "description": "The Offical Student-Zone App",
+  "icons": [
+    {
+      "src": "/image/i01_icon.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/image/i01_icon.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ],
+  "start_url": "/app/desktop/index.html",
+  "background_color": "#000000",
+  "display": "minimal-ui",
+  "scope": "/radio",
+  "theme_color": "#000000",
+  "shortcuts": [
+    {
+      "name": "Student-Zone",
+      "short_name": "Student-Zone",
+      "description": "Open Student-Zone",
+      "url": "https://student-zone.netlify.app/app/desktop/index.html",
+      "icons": [{ "src": "/image/i01_icon.png", "sizes": "144x144" }]
+    },
+    {
+      "name": "Student-Zone Radio",
+      "short_name": "Radio",
+      "description": "Open Student-Zone Radio",
+      "url": "https://student-zone.netlify.app/radio",
+      "icons": [{ "src": "/image/i01_icon.png", "sizes": "144x144" }]
+    }
+  ]
+}

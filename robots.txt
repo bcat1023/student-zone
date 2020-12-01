@@ -1,0 +1,11 @@
+# Ignore FrontPage files
+User-agent: *
+Disallow: /self1/g/lang=0
+Disallow: /backup.html
+Disallow: /staff
+Disallow: /404
+Disallow: /Extention/frame
+Disallow: /app
+Disallow: /image
+Disallow: /srvy
+Disallow: /staff
