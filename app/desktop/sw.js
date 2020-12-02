@@ -8,6 +8,7 @@ self.addEventListener('install', e => {
         ``,
         `index.html`,
         `offline.html`,
+        `/image/img.jpg`,
       ])
           .then(() => self.skipWaiting());
     })
