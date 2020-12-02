@@ -70,11 +70,3 @@
   from = "/*"
   to = "/error/418"
   status = 418
-  
-  from = "/*"
-  to = "/error/419"
-  status = 419
-  
-  from = "/*"
-  to = "/error/420"
-  status = 420
