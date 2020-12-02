@@ -2,67 +2,67 @@
   from = "/*"
   to = "/error/404"
   status = 404
-
+[[redirects]]
   from = "/*"
   to = "/error/400"
   status = 400
-
+[[redirects]]
   from = "/*"
   to = "/error/401"
   status = 401
-  
+[[redirects]]
   from = "/*"
   to = "/error/401"
   status = 403
-  
+[[redirects]]
   from = "/*"
   to = "/error/405"
   status = 405
-  
+[[redirects]]
   from = "/*"
   to = "/error/406"
   status = 406
-  
+[[redirects]]
   from = "/*"
   to = "/error/407"
   status = 407
-  
+[[redirects]]
   from = "/*"
   to = "/error/408"
   status = 408
-  
+[[redirects]]
   from = "/*"
   to = "/error/409"
   status = 409
-  
+[[redirects]]
   from = "/*"
   to = "/error/410"
   status = 410
-  
+[[redirects]]
   from = "/*"
   to = "/error/411"
   status = 411
-  
+[[redirects]]
   from = "/*"
   to = "/error/412"
   status = 412
-  
+[[redirects]]
   from = "/*"
   to = "/error/413"
   status = 413
-  
+[[redirects]]
   from = "/*"
   to = "/error/414"
   status = 414
-  
+[[redirects]]
   from = "/*"
   to = "/error/415"
   status = 415
-  
+[[redirects]]
   from = "/*"
   to = "/error/416"
   status = 416
-  
+[[redirects]]
   from = "/*"
   to = "/error/417"
   status = 417
