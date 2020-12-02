@@ -1,5 +1,3 @@
-[[plugins]]
-  package = "netlify-plugin-pagewatch"
 [[redirects]]
   from = "/*"
   to = "/error/404"
