@@ -1,101 +1,924 @@
-<html lang="en,us" >
-	<head>
-		<title>Student Zone | Home</title>
-		<link rel="icon" type="image/png"
-			href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Globe1.svg/956px-Globe1.svg.png">
-		<link rel="manifest"
-			href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Globe1.svg/956px-Globe1.svg.png">
-		<link rel="mask-icon"
-			href=https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Globe1.svg/956px-Globe1.svg.png" color="black">
-		<link rel="shortcut icon"
-			href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Globe1.svg/956px-Globe1.svg.png">
+<html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	
+		<link rel="icon" type="image/png" href="/image/icon.gif">
+		<link rel="manifest" href="/image/icon.gif">
+		<link rel="mask-icon" href="/image/icon.gif" color="black">
+		<link rel="shortcut icon" href="/image/icon.gif">
 		<meta name="apple-mobile-web-app-title" content="Student Zone">
 		<meta name="application-name" content="Student Zone">
 		<meta name="msapplication-TileColor" content="black">
-		<meta name="msapplication-TileImage"
-			content="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Globe1.svg/956px-Globe1.svg.png">
+		<meta name="msapplication-TileImage" content="/image/icon.gif">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	<style>
 	
-	.button {
-	color: white;
-	background-color: black;
-	border: none;
-	transition: 3s;
+	</head><body onload="myFunction()" style="margin:0;" data-new-gr-c-s-check-loaded="14.983.0">
+	
+		<div id="loader" style="display: none;"></div>
+	
+		<div style="display: block;" id="myDiv" class="animate-bottom">
+	
+		</div>
+	
+		<script>
+			var myVar;
+	
+	function myFunction() {
+		myVar = setTimeout(showPage, 3000);
 	}
 	
-	.button:hover {
-	color: black;
-	background-color: red;
-	border: none;
-	transition: 2s;
+	function showPage() {
+		document.getElementById("loader").style.display = "none";
+		document.getElementById("myDiv").style.display = "block";
+	}
+		</script>
+		<title>Student Zone | Hmm, Something Dosent Seem Right</title>
+		<script src="https://cdnres.willyweather.com/widget/warning/loadView.html?id=130477" type="application/javascript"></script>
+		<script>
+			function setCookie(cname,cvalue,exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires=" + d.toGMTString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 	}
 	
-	.button:focus {
-	color: white;
-	background-color: white;
-	border: none;
-	transition: 0s;
+	function getCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for(var i = 0; i < ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
 	
-	</style>
-	<body>
-	<script>window.google={kEI:"Quz2S63qIYeglAfw8oHGCg",kEXPI:"17259,23663,24477,24661,24745,24770,24808",kCSI:{e:"17259,23663,24477,24661,24745,24770,24808",ei:"Quz2S63qIYeglAfw8oHGCg",expi:"17259,23663,24477,24661,24745,24770,24808"},ml:function(){},pageState:"#",kHL:"en",time:function(){return(new Date).getTime()},log:function(b,d,c){var a=new Image,e=google,g=e.lc,f=e.li;a.onerror=(a.onload=(a.onabort=function(){delete g[f]}));g[f]=a;c=c||"/gen_204?atyp=i&ct="+b+"&cad="+d+"&zx="+google.time();a.src=c;e.li=f+1},lc:[],li:0,j:{en:1,l:function(){},e:function(){},b:location.hash&&location.hash!="#",bv:3,pl:[],mc:0,sc:0.5},Toolbelt:{}};(function(){for(var d=0,c;c=["ad","bc","p","pa","zd","ac","pc","pah","ph","sa","xx","zc","zz"][d++];)(function(a){google.j[a]=function(){google.j.pl.push([a,arguments])}})(c)})();
- window.google.sn="webhp";window.google.timers={load:{t:{start:(new Date).getTime()}}};try{window.google.pt=window.gtbExternal&&window.gtbExternal.pageT();}catch(u){}window.google.jsrt_kill=1;
- </script>
- <style>
- </style>
+	function checkCookie() {
+		var user=getCookie("username");
+		if (user != "") {
+			alert("Welcome again " + user);
+		} else {
+			 user = prompt("Please enter your name:","");
+			 if (user != "" && user != null) {
+				 setCookie("username", user, 30);
+			 }
+		}
+	}
+		</script>
+		<!--Cooike start-->
+		<script>
+			<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		</script>
+		<!--Cookie end-->
+		
+		<style>
+			.logo {
+				/* For future use */
+			}
+	
+			.searchbtn {
+				border-radius: 25px;
+				border: none;
+				color: black;
+				background-color: white;
+				height: 50px;
+				width: 5%;
+				transition: 1s;
+				postion: absolute;
+				z-index: -5;
+				outline: none;
+			}
+	
+			.searchbtn:hover {
+				background-color: black;
+				color: white;
+				border-radius: 25px;
+				border: none;
+				height: 50px;
+				width: 5%;
+				transition: 1s;
+				z-index: -5;
+				outline: none;
+			}
+	
+			.searchbtn:focus {
+				display: none 
+				color: black;
+				background-color: white;
+				color: white;
+				transition: 0s;
+				outline: none;
+			}
+	
+			.searchbar {
+				color: black;
+				background-color: white;
+				padding: 25px;
+				height: 10px;
+				width: 40%;
+				border-radius: 25px;
+				border: none;
+				size: 10px;
+				text-align: center;
+				text-size: 10px;
+				transition: 1s;
+				z-index: -5;
+				outline: none;
+			}
+	
+			.searchbar:hover {
+				color: white;
+				background-color: black;
+				padding: 25px;
+				height: 10px;
+				width: 40%;
+				border-radius: 25px;
+				border: none;
+				size: 10px;
+				text-align: center;
+				text-size: 10px;
+				transition: 1s;
+				z-index: -5;
+				outline: none;
+			}
+	
+			.searchbar:focus {
+				color: black;
+				background-color: white;
+				padding: 25px;
+				height: 10px;
+				width: 40%;
+				border-radius: 5px;
+				border: none;
+				size: 10px;
+				text-align: center;
+				text-size: 10px;
+				transition: 1s;
+				z-index: -5;
+				outline: none;
+			}
+	
+			.text {
+				background-color: black;
+				color: white;
+				z-index: 50;
+				postion: fixed;
+			}
+	
+			.button1 {
+				background-color: white;
+				width: 100%;
+				color: black;
+				float: left;
+				text-align: center;
+				border-color: white;
+				transition: 1s;
+				border: none;
+			}
+	
+			.button1:hover {
+				background-color: black;
+				width: 100%;
+				color: white;
+				float: left;
+				text-align: center;
+				border-color: black;
+				border: none;
+			}
+			
+			.button1:focus {
+				background-color: white;
+				width: 100%;
+				color: white;
+				float: left;
+				text-align: center;
+				outline: none;
+			}
+	
+			.button {
+				border-radius: 2px;
+				background-color: black;
+				border: none;
+				color: #FFFFFF;
+				text-align: center;
+				font-size: 10px;
+				padding: 20px;
+				width: 99px;
+				height: px;
+				transition: all 0.5s;
+				cursor: pointer;
+				margin: 10px;
+			}
+	
+			.button span {
+				cursor: pointer;
+				display: inline-block;
+				position: relative;
+				transition: 0.5s;
+			}
+	
+			.button span:after {
+				content: "";
+				position: absolute;
+				opacity: 0;
+				top: 0;
+				right: -20px;
+				transition: 50s;
+			}
+	
+			.button:hover span {
+				padding-right: 25px;
+			}
+	
+			.button:hover span:after {
+				opacity: 1;
+				right: 0;
+			}
+	
+			#myDiv {
+				display: none;
+				text-align: center;
+			}
+	
+			.alert {
+				padding: 20px;
+				background-color: #f44336;
+				color: white;
+				opacity: 1;
+				transition: opacity 0.6s;
+				margin-bottom: 15px;
+			}
+	
+			.alert.success {
+				background-color: #4CAF50;
+			}
+	
+			.alert.info {
+				background-color: #2196F3;
+			}
+	
+			.alert.warning {
+				background-color: #ff9800;
+			}
+	
+			.closebtn:hover .iframe:hover {
+				postion: fixed;
+				margin-left: 15px;
+				color: white;
+				float: right;
+				font-size: 22px;
+			}
+	
+			.iframe:hover {
+				/* for future purposes*/
+			}
+	
+			.closebtn:hover {
+				position: fixed;
+				top: 20px;
+				right: 45px;
+				font-size: 60px;
+			}
+	
+			body {
+				font-family: 'Lato', sans-serif;
+			}
+	
+	
+	
+			.topnav .search-container button:hover {
+				background: #ccc;
+			}
+	
+			.overlay {
+				height: 0%;
+				width: 100%;
+				position: fixed;
+				z-index: 5;
+				top: 0;
+				left: 0;
+				background-color: rgb(0, 0, 0);
+				background-color: rgba(0, 0, 0, 0.9);
+				overflow-y: hidden;
+				transition: 0.5s;
+			}
+	
+			.overlay-content {
+				position: relative;
+				top: 25%;
+				width: 100%;
+				text-align: center;
+				margin-top: 30px;
+			}
+	
+			.overlay a {
+				padding: 8px;
+				text-decoration: none;
+				font-size: 36px;
+				color: #818181;
+				display: block;
+				transition: 0.3s;
+				float: left;
+			}
+	
+			.navbutton:hover {
+				padding: -5px;
+				text-decoration: none;
+				font-size: 36px;
+				color: red;
+				display: block;
+				transition: 0.3s;
+				float: left;
+			}
+	
+			.overlay a:hover .overlay a:focus {
+				color: #f1f1f1;
+				float: left;
+			}
+	
+			.overlay .closebtn {
+				position: absolute;
+				right: 45px;
+				font-size: 40px;
+			}
+	
+			.closebtn:hover {
+				position: absolute;
+				right: 45px;
+				font-size: 40px;
+				color: red;
+				transition: 1s;
+			}
+	
+			.closebtn:focus {
+				position: absolute;
+				right: 45px;
+				font-size: 40px;
+				color: black;
+				transition: 1s;
+			}
+	
+			@media screen and (max-height: 450px) {
+				.overlay {
+					overflow-y: auto;
+				}
+	
+				.overlay a {
+					font-size: 20px
+				}
+	
+	
+			}
+	
+			.overlay a {
+				font-size: 20px
+			}
+			body {
+				background-image:
+					url("/image/img.jpg");
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+			}
+	
+			.chat-popup1 {
+				min-width: 250px;
+				/* Set a default minimum width */
+				margin-left: -125px;
+				/* Divide value of min-width by 2 */
+				background-color: black;
+				/* Black background color */
+				color: white;
+				/* White text color */
+				text-align: center;
+				/* Centered text */
+				border-radius: 2px;
+				/* Rounded borders */
+				padding: 16px;
+				/* Padding */
+				position: fixed;
+				/* Sit on top of the screen */
+				z-index: 1;
+				/* Add a z-index if needed */
+				left: 49%;
+				/* Center the snackbar */
+				bottom: 30px;
+				/* 30px from the bottom */
+				transition: 0.5s;
+				/* The swipe up and down speed*/
+			}
+	
+			.chat-popup11 {
+				background-color: black;
+				color: white;
+				position: fixed;
+				bottom: 0;
+				border: 0px solid #f1f1f1;
+				z-index: -9;
+				text-decoration: none;
+				content: Loading Please Wait;
+			}
+	
+			.ad {
+				background-color: black;
+				color: white;
+				position: fixed;
+				bottom: 0;
+				right: 100;
+				border: 0px solid #f1f1f1;
+				z-index: -10;
+				text-decoration: none;
+			}
+	
+			chat-popup1:visited {
+				color: white;
+			}
+	
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+	
+			.navbar {
+				background-color: black;
+				overflow: auto;
+				postion: fixed;
+				top: 9999px;
+				bottom: 99px;
+				right: 0;
+				left: 0;
+				line-height: 100%;
+			}
+	
+			.navbar a {
+				padding: 12px;
+				color: white;
+				text-decoration: none;
+				font-size: 17px;
+				top: 0;
+			}
+	
+			.navbar a:hover {
+				background-color: #000;
+				top: 0;
+			}
+	
+			.active {
+				color: Black;
+				float: left;
+			}
+	
+			.covid {
+				color: white;
+				float: right;
+				top: 0;
+				transition: 1s;
+			}
+	
+			.covid:hover {
+				color: red;
+				transition: 1s;
+			}
+	
+			.unactive {
+				float: left;
+				transition: 1s;
+			}
+	
+			.unactive:hover {
+				background-color: White;
+				color: Red;
+				float: left;
+				height: auto;
+				transition: 1s;
+			}
+	
+			@media screen and (max-width: 500px) {
+				.navbar a {
+					float: none;
+					display: block;
+	
+				}
+			}
+	
+			.Main Content {
+				text-align: center;
+				float: center;
+				font-size: 17px;
+			}
+	
+			/*Weather start*/
+			/* Button used to open the chat form - fixed at the bottom of the page */
+			.open-button {
+				background-color: #555;
+				color: white;
+				padding: 16px 20px;
+				border: none;
+				cursor: pointer;
+				opacity: 0.8;
+				position: fixed;
+				bottom: 23px;
+				width: 280px;
+	
+			}
+	
+			/* The popup chat - hidden by default */
+			.chat-popup {
+				display: none;
+				position: fixed;
+				bottom: 0;
+				border: 0px solid #f1f1f1;
+				z-index: 1;
+				background-color: white;
+				content: Loading Please Wait;
+			}
+	
+			/* Add styles to the form container */
+			.form-container {
+				max-width: 300px;
+				padding: 10px;
+				background-color: white;
+			}
+	
+			/* Full-width textarea */
+			.form-container textarea {
+				width: 100%;
+				padding: 15px;
+				margin: 5px 0 22px 0;
+				border: none;
+				background: #f1f1f1;
+				resize: none;
+				min-height: 200px;
+			}
+	
+			/* When the textarea gets focus, do something */
+			.form-container textarea:focus {
+				background-color: #ddd;
+				outline: none;
+			}
+	
+			/* Set a style for the submit/send button */
+			.form-container .btn {
+				background-color: #4CAF50;
+				color: white;
+				padding: 16px 20px;
+				border: none;
+				cursor: pointer;
+				width: 100%;
+				margin-bottom: 10px;
+				opacity: 0.8;
+			}
+	
+			/* Add a red background color to the cancel button */
+			.form-container .cancel {
+				background-color: red;
+			}
+	
+			/* Add some hover effects to buttons */
+			.form-container .btn:hover,
+			.open-button:hover {
+				opacity: 1;
+			}
+	
+			/*Weather end*/
+			.openbutton {
+				width: 100%;
+			}
+	
+			/* The snackbar - position it at the bottom and in the middle of the screen */
+			#snackbar {
+				visibility: hidden;
+				/* Hidden by default. Visible on click */
+				min-width: 250px;
+				/* Set a default minimum width */
+				margin-left: -125px;
+				/* Divide value of min-width by 2 */
+				background-color: #333;
+				/* Black background color */
+				color: #fff;
+				/* White text color */
+				text-align: center;
+				/* Centered text */
+				border-radius: 2px;
+				/* Rounded borders */
+				padding: 16px;
+				/* Padding */
+				position: fixed;
+				/* Sit on top of the screen */
+				z-index: 1;
+				/* Add a z-index if needed */
+				left: 50%;
+				/* Center the snackbar */
+				bottom: 30px;
+				/* 30px from the bottom */
+			}
+	
+			/* Show the snackbar when clicking on a button (class added with JavaScript) */
+			#snackbar.show {
+				visibility: visible;
+				/* Show the snackbar */
+				/* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+			However, delay the fade out process for 2.5 seconds */
+				-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+				animation: fadein 0.5s, fadeout 0.5s 2.5s;
+			}
+	
+			/* Animations to fade the snackbar in and out */
+			@-webkit-keyframes fadein {
+				from {
+					bottom: 0;
+					opacity: 0;
+				}
+	
+				to {
+					bottom: 30px;
+					opacity: 1;
+				}
+			}
+	
+			@keyframes fadein {
+				from {
+					bottom: 0;
+					opacity: 0;
+				}
+	
+				to {
+					bottom: 30px;
+					opacity: 1;
+				}
+			}
+	
+			@-webkit-keyframes fadeout {
+				from {
+					bottom: 30px;
+					opacity: 1;
+				}
+	
+				to {
+					bottom: 0;
+					opacity: 0;
+				}
+			}
+	
+			@keyframes fadeout {
+				from {
+					bottom: 30px;
+					opacity: 1;
+				}
+	
+				to {
+					bottom: 0;
+					opacity: 0;
+				}
+			}
+			
+			.txt_box_easter {
+				border: none;
+				outline: none;
+			}
+			
+			.txt_box_easter:hover {
+				border: none;
+				outline: none;
+				background-color: gray;
+			}
+	
+			.txt_box_easter:focus {
+				border: none;
+				outline: none;
+				background-color: white;
+			}
+		</style>
+		
+	
+		
+			<!--tezt_end-->
+			
+		
+	
+		
+			
+			
+	<div class="chat-popup" id="myForms">
+				<form name="what_do_you_think" method="post"><input type="hidden" name="form-name" value="what_do_you_think">
+  <p>
+    <label>Your Email <input type="text" name="email"></label>   
+  </p>
+  <p></p><p>Are You Enjoying?</p>
+<input type="radio" id="enjoying yes" name="enjoying yes" value="yes">
+  <label for="enjoying">Yes</label><br>
+ <input type="radio" id="enjoying no" name="enjoying no" value="no">
+  <label for="enjoying">No </label><br>
 
-  
-<script>var _gjwl=location;function _gjuc(){var b=_gjwl.href.indexOf("#");if(b>=0){var a=_gjwl.href.substring(b+1);if(/(^|&)q=/.test(a)&&a.indexOf("#")==-1&&!/(^|&)cad=h($|&)/.test(a)){_gjwl.replace("/search?"+a.replace(/(^|&)fp=[^&]*/g,"")+"&cad=h");return 1}}return 0}function _gjp(){!(window._gjwl.hash&&window._gjuc())&&setTimeout(_gjp,500)};
- google.y={};google.x=function(e,g){google.y[e.id]=[e,g];return false};if(!window.google)window.google={};window.google.crm={};window.google.cri=0;window.clk=function(e,f,g,k,l,b,m){if(document.images){var a=encodeURIComponent||escape,c=new Image,h=window.google.cri++;window.google.crm[h]=c;c.onerror=(c.onload=(c.onabort=function(){delete window.google.crm[h]}));if(b&&b.substring(0,6)!="&sig2=")b="&sig2="+b;c.src=["/url?sa=T","",f?"&oi="+a(f):"",g?"&cad="+a(g):"","&ct=",a(k||"res"),"&cd=",a(l),"&ved=",a(m),e?"&url="+a(e.replace(/#.*/,"")).replace(/\+/g,"%2B"):"","&ei=","Quz2S63qIYeglAfw8oHGCg",b].join("")}return true};
- window.gbar={qs:function(){},tg:function(e){var o={id:'gbar'};for(i in e)o[i]=e[i];google.x(o,function(){gbar.tg(o)})}};</script>
- </head>
- <!-- textarea id=csi style=display:none>
- </textarea -->
- <script>if(google.j.b)document.body.style.visibility='hidden';</script>
- <iframe name=wgjf style=display:none src="" onload="google.j.l()" onerror="google.j.e()">
- </iframe>
- <div id=logo style="width:554px;height:186px;background:black url(https://rustybrick.s3.amazonaws.com/pacman10-hp.png) 0 0 no-repeat;position:relative;margin-bottom:9px" title="PAC-MAN's 30th Birthday! Doodle with PAC-MANÙ & É±980 NAMCO BANDAI Games Inc.">
- <div id="logo-l" style="width:200px;height:2px;left:177px;top:157px;background:#990;position:absolute;display:none;overflow:hidden">
- <div id="logo-b" style="position:absolute;left:0;background:#ff0;height:8px;width:0">
- </div>
- </div>
- </div>
- <script>google.pml=function(){function d(a){if(!google.pml_installed){google.pml_installed=true;if(!a){document.getElementById("logo").style.background="black";window.setTimeout(function(){var b=document.getElementById("logo-l");if(b)b.style.display="block"},400)}a=document.createElement("script");a.type="text/javascript";
+  <p></p>
+  <p>
+    <label>What Should We Inprove? <br><input type="text" name="inprove"></label>
+  </p>
+  <p>
+    <button type="submit" href="/submit" onclick="closeFormss">Send &amp; Close</button>
+  </p>
+			</form>
+			</div>
+	
+			<div class="chat-popup" id="myForm">
+				<form>
+				<button class="button1" type="button" onclick="closeFors()">Close</button>
+				<div style="width: 700px;"><iframe style="display: block;" src="https://cdnres.willyweather.com/widget/loadView.html?id=130191" width="700" height="520" frameborder="0" scrolling="no"></iframe><a style="position: relative;text-indent: -9999em;display: block;z-index: 1;height: 20px;margin: -20px 0 0 0" href="https://www.willyweather.com/ca/napa-county/american-canyon.html" rel="nofollow">Weather info for American Canyon</a></div>
+			</form>
+			</div>
+			
+			
+			
+			
+			<marquee class="text" behavior="scroll" direction="left">|| Sorry, Student-Zone Is Down For Now | Check Back Soon | Student-Zone Staff Are Working To Fix The Problem | Check Your Email For Information From The District ||</marquee>
+			<script>
+				function openNavs() {
+		document.getElementById("myNav").style.height = "100%";
+	}
+	
+	function closeNav() {
+		document.getElementById("myNav").style.height = "0%";
+	}
+			</script>
+			<script>
+				function openNav1() {
+		document.getElementById("myNav1").style.height = "100%";
+	}
+	
+	function closeNav1() {
+		document.getElementById("myNav1").style.height = "0%";
+	}
+			</script>
+			<script>
+				function openNav2() {
+		document.getElementById("myNav2").style.height = "100%";
+	}
+	
+	function closeNav2() {
+		document.getElementById("myNav2").style.height = "0%";
+	}
+			</script>
+			<script>
+				function openNav3() {
+		document.getElementById("myNav3").style.height = "100%";
+	}
+	
+	function closeNav3() {
+		document.getElementById("myNav3").style.height = "0%";
+	}
+			</script>
+			<script>
+				function openNav4() {
+		document.getElementById("myNav4").style.height = "100%";
+	}
+	
+	function closeNav4() {
+		document.getElementById("myNav4").style.height = "0%";
+	}
+			</script>
+			<script>
+				function openNav5() {
+		document.getElementById("myNav5").style.height = "100%";
+	}
+	
+	function closeNav5() {
+		document.getElementById("myNav5").style.height = "0%";
+	}
+			</script>
+			
+			<script>
+				function openNav6() {
+		document.getElementById("myNav6").style.height = "100%";
+	}
+	
+	function closeNav6() {
+		document.getElementById("myNav6").style.height = "0%";
+	}
+			</script>
+			<script>
+				function openNav7() {
+		document.getElementById("myNav7").style.height = "100%";
+	}
+	
+	function closeNav7() {
+		document.getElementById("myNav7").style.height = "0%";
+	}
+			</script>
+						<script>
+				function openNav8() {
+		document.getElementById("myNav8").style.height = "100%";
+	}
+	
+	function closeNav8() {
+		document.getElementById("myNav8").style.height = "0%";
+	}
+			</script>
+			
+			<div class="Main Content">
+				<style>
+					body {
+						color: Black;
+						text-align: center;
+						width: 100%;
+					}
+				</style>
+				<br>
+					<h1>🆂🆃🆄🅳🅴🅽🆃 🆉🅾🅽🅴</h1>
 
-  
-a.src="https://rustybrick.s3.amazonaws.com/pacman10-hp.2.js";
-
-  
-google.dom.append(a)}}function e(){if(document.f&&document.f.btnI)document.f.btnI.onclick=function(){typeof google.pacman!="undefined"?google.pacman.insertCoin():d(false);return false}}if(!google.pml_loaded){google.pml_loaded=true;window.setTimeout(function(){document.f&&document.f.q&&document.f.q.value==""&&d(true)},1E4);e();google.rein&&google.rein.push(e);google.dstr&&google.dstr.push(function(){google.pacman&&google.pacman.destroy();if(google.pml_installed){for(var a=(document.getElementById("xjsc")||document.body).getElementsByTagName("script"),b=0,c;c=a[b++];)c.src.indexOf("/logos/js")!=-1&&google.dom.remove(c);google.pml_installed=false}});google.pacManQuery=function(){google.nav(document.getElementById("dlink").href)}}};</script>
-
-  
-
- <form action="/search" name=f onsubmit="google.fade=null">
- <input type="hidden" name=q value="" size=57 style="">
- <input name=btnI type=submit value="Start" class="button" onclick="this.checked=1">
- </form>
-
-  
-<div id=xjsd>
- </div>
- <div id=xjsi>
- <script>if(google.y)google.y.first=[];if(google.y)google.y.first=[];if(!google.xjs){google.dstr=[];google.rein=[];window.setTimeout(function(){var a=document.createElement("script");
- a.src="https://rustybrick.s3.amazonaws.com/jscript.js";
-
-  
-(document.getElementById("xjsd")||document.body).appendChild(a);if(google.timers&&google.timers.load.t)google.timers.load.t.xjsls=(new Date).getTime();},0);
- google.xjs=1};google.neegg=1;google.y.first.push(function(){google.ac.i(document.f,document.f.q,'','','ZAO1UHON4Cy3HD_vAXF7cQ',{o:1,sw:1});(function(){
- var h,i,j=1,k=google.time(),l=[];google.rein.push(function(){j=1;k=google.time()});google.dstr.push(function(){google.fade=null});function m(a,f){var b=[];for(var c=0,e;e=a[c++];){var d=document.getElementById(e);d&&b.push(d)}for(var c=0,g;g=f[c++];)b=b.concat(n(g[0],g[1]));for(var c=0;b[c];c++)b[c]=[b[c],"opacity",0,1,0,""];return b}function n(a,f){var b=[],c=new RegExp("(^|\\s)"+f+"($|\\s)");for(var e=0,d,g=document.getElementsByTagName(a);d=
- g[e++];)c.test(d.className)&&b.push(d);return b}google.fade=function(a){if(google.fx&&j){a=a||window.event;var f=1,b=google.time()-k;if(a&&a.type=="mousemove"){var c=a.clientX,e=a.clientY;f=(h||i)&&(h!=c||i!=e)&&b>600;h=c;i=e}if(f){j=0;google.fx.animate(600,m(["fctr","ghead","pmocntr","sbl","tba","tbe"],[["span","fade"],["div","fade"],["div","gbh"]]));for(var d=0;d<
- l.length;++d)if(typeof l[d]=="function")l[d]()}}};google.addFadeNotifier=function(a){l.push(a);if(!j)a()};
- })();
- ;google.History&&google.History.initialize('/')});if(google.j&&google.j.en&&google.j.xi){window.setTimeout(google.j.xi,0);google.fade=null;}google.pml && google.pml();</script>
- </div>
- <script>(function(){
- var b,d,e,f;function g(a,c){if(a.removeEventListener){a.removeEventListener("load",c,false);a.removeEventListener("error",c,false)}else{a.detachEvent("onload",c);a.detachEvent("onerror",c)}}function h(a){f=(new Date).getTime();++d;a=a||window.event;var c=a.target||a.srcElement;g(c,h)}var i=document.getElementsByTagName("img");b=i.length;d=0;for(var j=0,k;j<b;++j){k=i[j];if(k.complete||typeof k.src!="string"||!k.src)++d;else if(k.addEventListener){k.addEventListener("load",h,false);k.addEventListener("error",
- h,false)}else{k.attachEvent("onload",h);k.attachEvent("onerror",h)}}e=b-d;function l(){google.timers.load.t.ol=(new Date).getTime();google.timers.load.t.iml=f;google.kCSI.imc=d;google.kCSI.imn=b;google.kCSI.imp=e;google.report&&google.report(google.timers.load,google.kCSI)}if(window.addEventListener)window.addEventListener("load",l,false);else if(window.attachEvent)window.attachEvent("onload",l);google.timers.load.t.prt=(f=(new Date).getTime());
- })();</script>
- </body>
- </html>
+				</div>
+				<br>
+					<!--google search-->
+					
+					<form id="" action="" method="" name="" "="">
+	
+						
+						
+						<button class="" type=""><img src="https://student-zone.netlify.app/image/bars.svg" alt="Loading"></button>
+					</form>
+					<!--google search ends-->
+				
+			
+			
+			<script>
+				function openFors() {
+		document.getElementById("myForm").style.display = "block";
+	}
+	</script><script>
+	function closeFors() {
+		document.getElementById("myForm").style.display = "none";
+	}
+			</script>
+	<!--sup made by brandon gillen from acms-->
+			<script>
+				function openFormss() {
+		document.getElementById("myForms").style.display = "block"
+	}
+	
+	function closeFormss() {
+		document.getElementById("myForms").style.display = "none";
+	}
+			</script>
+			<script>
+				function openForm() {
+		document.getElementById("myForms").style.display = "block";
+	}
+	</script><script>
+	function closeForm() {
+		document.getElementById("myForms").style.display = "none";
+	}
+			</script>
+	<!--sup made by brandon gillen from acms-->
+			<script>
+				function openForm() {
+	 document.getElementById("w").style.height = "100%";
+	}
+	
+	function closeForm() {
+		document.getElementById("myForm").style.display = "none";
+	}
+			</script>
+			<div id="myNav3" class="overlay">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">×</a>
+				<div class="overlay-content1">
+					<a href="javascript:(0)">Set Us As Your Home Page?</a>
+					<a href="javascript:(0)"><img src="https://iili.io/25xL2S.md.png" alt="25xL2S.md.png" border="0"> First Go To chrome://settings/appearance</a><br>
+						<a href="javascript:(0)"><img src="https://iili.io/25xpQj.md.png" alt="25xpQj.md.png" border="0"> Then Set The Following Settings</a>
+				</div>
+			</div>
+			
+			
+			<script>
+				function openNav3() {
+		document.getElementById("myNav3").style.height = "100%";
+	}
+			</script>
+			<script>
+				function closeNav3() {
+		document.getElementById("myNav3").style.height = "0%";
+	}
+			</script>
+			<script>
+				var myVar;
+	
+	function myFunction() {
+		myVar = setTimeout(showPage, 3000);
+	}
+	
+	function showPage() {
+		document.getElementById("loader").style.display = "none";
+		document.getElementById("myDiv").style.display = "block";
+	}
+	</script>
+			<!--Made by Brandon Gillen-->
+									
+		
+<!-- Server Analytics -->
+	
+<!-- Server Analytics End -->
+	
+	
+</body></html>

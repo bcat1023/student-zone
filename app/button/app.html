@@ -1,11 +1,80 @@
-<html><head><link id="avast_os_ext_custom_font" href="chrome-extension://mbckjcfnjmoiinpgddefodcighgikkgn/common/ui/fonts/fonts.css" rel="stylesheet" type="text/css"></head><body onload="myFunction()" style="margin:0;">
+<html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	
+		<link rel="icon" type="image/png" href="/image/icon.gif">
+		<link rel="manifest" href="/image/icon.gif">
+		<link rel="mask-icon" href="/image/icon.gif" color="black">
+		<link rel="shortcut icon" href="/image/icon.gif">
+		<meta name="apple-mobile-web-app-title" content="Student Zone">
+		<meta name="application-name" content="Student Zone">
+		<meta name="msapplication-TileColor" content="black">
+		<meta name="msapplication-TileImage" content="/image/icon.gif">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	</head><body onload="myFunction()" style="margin:0;" data-new-gr-c-s-check-loaded="14.983.0">
 	
 		<div id="loader" style="display: none;"></div>
 	
 		<div style="display: block;" id="myDiv" class="animate-bottom">
 	
 		</div>
-		
+	
+		<script>
+			var myVar;
+	
+	function myFunction() {
+		myVar = setTimeout(showPage, 3000);
+	}
+	
+	function showPage() {
+		document.getElementById("loader").style.display = "none";
+		document.getElementById("myDiv").style.display = "block";
+	}
+		</script>
+		<title>Student Zone | Hmm, Something Dosent Seem Right</title>
+		<script src="https://cdnres.willyweather.com/widget/warning/loadView.html?id=130477" type="application/javascript"></script>
+		<script>
+			function setCookie(cname,cvalue,exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires=" + d.toGMTString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+	
+	function getCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for(var i = 0; i < ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	
+	function checkCookie() {
+		var user=getCookie("username");
+		if (user != "") {
+			alert("Welcome again " + user);
+		} else {
+			 user = prompt("Please enter your name:","");
+			 if (user != "" && user != null) {
+				 setCookie("username", user, 30);
+			 }
+		}
+	}
+		</script>
+		<!--Cooike start-->
+		<script>
+			<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		</script>
+		<!--Cookie end-->
 		
 		<style>
 			.logo {
@@ -258,7 +327,9 @@
 			}
 	
 			.navbutton:hover {
+				padding: -5px;
 				text-decoration: none;
+				font-size: 36px;
 				color: red;
 				display: block;
 				transition: 0.3s;
@@ -297,7 +368,7 @@
 					overflow-y: auto;
 				}
 	
-				.overlay 
+				.overlay a {
 					font-size: 20px
 				}
 	
@@ -309,7 +380,7 @@
 			}
 			body {
 				background-image:
-					url("https://student-zone.netlify.app/image/img.jpg");
+					url("/image/img.jpg");
 				background-repeat: no-repeat;
 				background-attachment: fixed;
 				background-size: cover;
@@ -396,15 +467,6 @@
 				top: 0;
 			}
 	
-			.unactive:hover {
-				background-color: White;
-				color: Red;
-				float: left;
-				height: auto;
-				transition: 1s;
-			}
-	
-			
 			.active {
 				color: Black;
 				float: left;
@@ -424,6 +486,14 @@
 	
 			.unactive {
 				float: left;
+				transition: 1s;
+			}
+	
+			.unactive:hover {
+				background-color: White;
+				color: Red;
+				float: left;
+				height: auto;
 				transition: 1s;
 			}
 	
@@ -605,6 +675,23 @@
 					opacity: 0;
 				}
 			}
+			
+			.txt_box_easter {
+				border: none;
+				outline: none;
+			}
+			
+			.txt_box_easter:hover {
+				border: none;
+				outline: none;
+				background-color: gray;
+			}
+	
+			.txt_box_easter:focus {
+				border: none;
+				outline: none;
+				background-color: white;
+			}
 		</style>
 		
 	
@@ -614,48 +701,40 @@
 		
 	
 		
-			<div class="navbar">
-				
-				<div id="myNav" class="overlay" style="height: 100%;">
-					<div class="overlay-content">
-						<a class="navbutton" target="_blank" href="https://www.nvusd.org/">NVUSD.org</a>
-						<a class="navbutton" target="_blank" href="https://acms-nvusd-ca.schoolloop.com/">ACMS.com</a>
-						<a class="navbutton" target="_blank" href="https://quizizz.com/login">Quizizz</a>
-						<a class="navbutton" target="_blank" href="https://clever.com/in/nvusd/student/portal">Clever</a>
-						<a class="navbutton" target="_blank" href="https://khanacademy.org">Khan Academy</a>
-						<a class="navbutton" target="_blank" href="https://classroom.google.com">Google Classroom</a>
-						<a class="navbutton" target="_blank" href="https://gmail.com">Gmail</a>
-						<a class="navbutton" target="_blank" href="https://drive.google.com">Google Drive</a>
-						<a class="navbutton" target="_blank" href="https://napavalleyusd.asp.aeries.net/student/LoginParent.aspx?language=00">Aeries Student Portal</a>
-						<a class="navbutton" target="_blank" href="https://soraapp.com/welcome/login/201252">Sora</a>
-						<a class="navbutton" target="_blank" href="https://student.naviance.com/main">Naviance</a>
-						<a class="navbutton" target="_blank" href="https://quizlet.com/">Quizlet</a>
-						<a class="navbutton" target="_blank" href="https://www.duolingo.com/?isLoggingIn=true">Duolingo</a>
-						<a class="navbutton" target="_blank" href="https://kahoot.it/">Kahoot</a>
-						<a class="navbutton" target="_blank" href="https://app.peardeck.com/join">Pear Deck</a>
-						<a class="navbutton" target="_blank" href="https://www.mystudentsquare.com/signin">Student Square</a>
-						<a class="navbutton" target="_blank" href="https://lhh.tutor.com/?ProgramGUID=bb98647e-db6e-4957-8ff1-1f44e0f536f0">Tutor.com</a>
-						<a class="navbutton" target="_blank" href="https://calendar.google.com/">Google Calendar</a>
-						<a class="navbutton" target="_blank" href="https://home.smartmusic.com/?_ga=2.17122873.1686723049.1602034310-1920982105.1602034310">SmartMusic</a>
-						<a class="navbutton" target="_blank" href="https://padlet.com/auth/login">Padlet</a>
-						<a class="navbutton" target="_blank" href="https://connected.mcgraw-hill.com/connected/login.do">Connect Ed</a>
-						<a class="navbutton" target="_blank" href="https://connected.mcgraw-hill.com/connected/login.do">Mc Graw Hill</a>
-						<a class="navbutton" target="_blank" href="https://clever.com/oauth/authorize?channel=clever-portal&client_id=59b1bbef45a1ef9f3bfb&confirmed=true&district_id=5ba2bcabf6cd4800018eb876&redirect_uri=https%3A%2F%2Fplay.dreambox.com%2Flogin%2Fclever_oauth&response_type=code">Dream Box</a>
-						<a class="navbutton" target="_blank" href="https://nvusdms.libraryreserve.com/10/45/en/SignIn.htm?url=Default.htm">OverDrive</a>
-					</div>
-				</div>
-				
-					
-				</div>
 			
 			
+	<div class="chat-popup" id="myForms">
+				<form name="what_do_you_think" method="post"><input type="hidden" name="form-name" value="what_do_you_think">
+  <p>
+    <label>Your Email <input type="text" name="email"></label>   
+  </p>
+  <p></p><p>Are You Enjoying?</p>
+<input type="radio" id="enjoying yes" name="enjoying yes" value="yes">
+  <label for="enjoying">Yes</label><br>
+ <input type="radio" id="enjoying no" name="enjoying no" value="no">
+  <label for="enjoying">No </label><br>
+
+  <p></p>
+  <p>
+    <label>What Should We Inprove? <br><input type="text" name="inprove"></label>
+  </p>
+  <p>
+    <button type="submit" href="/submit" onclick="closeFormss">Send &amp; Close</button>
+  </p>
+			</form>
+			</div>
 	
+			<div class="chat-popup" id="myForm">
+				<form>
+				<button class="button1" type="button" onclick="closeFors()">Close</button>
+				<div style="width: 700px;"><iframe style="display: block;" src="https://cdnres.willyweather.com/widget/loadView.html?id=130191" width="700" height="520" frameborder="0" scrolling="no"></iframe><a style="position: relative;text-indent: -9999em;display: block;z-index: 1;height: 20px;margin: -20px 0 0 0" href="https://www.willyweather.com/ca/napa-county/american-canyon.html" rel="nofollow">Weather info for American Canyon</a></div>
+			</form>
+			</div>
 			
 			
 			
 			
-			
-			
+			<marquee class="text" behavior="scroll" direction="left">|| Sorry, Student-Zone Is Down For Now | Check Back Soon | Student-Zone Staff Are Working To Fix The Problem | Check Your Email For Information From The District ||</marquee>
 			<script>
 				function openNavs() {
 		document.getElementById("myNav").style.height = "100%";
@@ -729,16 +808,38 @@
 		document.getElementById("myNav7").style.height = "0%";
 	}
 			</script>
+						<script>
+				function openNav8() {
+		document.getElementById("myNav8").style.height = "100%";
+	}
+	
+	function closeNav8() {
+		document.getElementById("myNav8").style.height = "0%";
+	}
+			</script>
 			
-			
+			<div class="Main Content">
+				<style>
+					body {
+						color: Black;
+						text-align: center;
+						width: 100%;
+					}
+				</style>
+				<br>
+					<h1>🆂🆃🆄🅳🅴🅽🆃 🆉🅾🅽🅴</h1>
 
-				
-				
+				</div>
+				<br>
+					<!--google search-->
 					
-					
-					
-					
-				
+					<form id="" action="" method="" name="" "="">
+	
+						
+						
+						<button class="" type=""><img src="https://student-zone.netlify.app/image/bars.svg" alt="Loading"></button>
+					</form>
+					<!--google search ends-->
 				
 			
 			
@@ -780,6 +881,16 @@
 		document.getElementById("myForm").style.display = "none";
 	}
 			</script>
+			<div id="myNav3" class="overlay">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">×</a>
+				<div class="overlay-content1">
+					<a href="javascript:(0)">Set Us As Your Home Page?</a>
+					<a href="javascript:(0)"><img src="https://iili.io/25xL2S.md.png" alt="25xL2S.md.png" border="0"> First Go To chrome://settings/appearance</a><br>
+						<a href="javascript:(0)"><img src="https://iili.io/25xpQj.md.png" alt="25xpQj.md.png" border="0"> Then Set The Following Settings</a>
+				</div>
+			</div>
+			
+			
 			<script>
 				function openNav3() {
 		document.getElementById("myNav3").style.height = "100%";
@@ -803,7 +914,11 @@
 	}
 	</script>
 			<!--Made by Brandon Gillen-->
+									
 		
+<!-- Server Analytics -->
+	
+<!-- Server Analytics End -->
 	
 	
-<div></div></body></html>
+</body></html>
