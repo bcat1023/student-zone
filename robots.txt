@@ -1,11 +1,19 @@
 # Ignore FrontPage files
 User-agent: *
-Disallow: /self1/g/lang=0
-Disallow: /backup.html
-Disallow: /staff
-Disallow: /404
-Disallow: /Extention/frame
 Disallow: /app
+Disallow: /css
+Disallow: /error
+Disallow: /extention
 Disallow: /image
+Disallow: /self1
 Disallow: /srvy
 Disallow: /staff
+Disallow: /amp-web-push-helper-frame.html
+Disallow: /amp-web-push-permission-dialog.html
+Disallow: /backup.html
+Disallow: /bingsiteauth.xml
+Disallow: /netlify.toml
+Disallow: /onesignalsdkupdaterworker.js
+Disallow: /onesignalsdkworker.js
+Disallow: /readme.md
+Disallow: /test.html
