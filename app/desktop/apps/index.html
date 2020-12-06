@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://use.fontawesome.com/3752eee886.js"></script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+	body {
+		margin: 0;
+		font-family: "Lato", sans-serif;
+	}
+
+	.sidebar {
+		margin: 0;
+		padding: 0;
+		width: 200px;
+		background-color: #f1f1f1;
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+	}
+
+	.sidebar a {
+		display: block;
+		color: black;
+		padding: 16px;
+		text-decoration: none;
+	}
+ 
+	.sidebar a.active {
+		background-color: black;
+		color: white;
+	}
+
+	.sidebar a:hover:not(.active) {
+		background-color: black;
+		color: white;
+	}
+
+	div.content {
+		margin-left: 200px;
+		padding: 1px 16px;
+		height: 1000px;
+	}
+
+	@media screen and (max-width: 700px) {
+		.sidebar {
+			width: 100%;
+			height: auto;
+			position: relative;
+		}
+			.sidebar a {float: left;}
+			div.content {margin-left: 0;}
+		}
+
+	@media screen and (max-width: 400px) {
+		.sidebar a {
+			text-align: center;
+			float: none;
+		}
+	}
+
+	.apps {
+		height: 50px;
+		text-decoration: none;
+		transition: 1s;
+	}
+	
+	.apps:link {
+		height: 50px;
+		text-decoration: none;
+		transition: 1s;
+	}
+	
+	.apps:visited  {
+		height: 50px;
+		text-decoration: none;
+		transition: 1s;
+	}
+	
+	.apps:hover  {
+		height: 50px;
+		text-decoration: none;
+		opacity: 0.5;
+		transition: 1s;
+	}
+	
+	.music-chat-popup {
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+				height: 0%;
+				border: 0px solid #f1f1f1;
+				z-index: 15;
+				background-color: white;
+				content: Loading Please Wait;
+				transition: 0.5s;
+				max-height: auto;
+	}
+	
+	.music-navbutton {
+		text-decoration: none;
+		font-size: 36px;
+		color: red;
+		transition: 0.3s;
+	}
+	
+	.searchbtn {
+				border-radius: 25px;
+				border: none;
+				color: black;
+				background-color: white;
+				height: 50px;
+				width: 5%;
+				transition: 1s;
+				postion: absolute;
+				z-index: -5;
+				outline: none;
+			}
+	
+			.searchbtn:hover {
+				background-color: black;
+				color: white;
+				border-radius: 25px;
+				border: none;
+				height: 50px;
+				width: 5%;
+				transition: 1s;
+				z-index: -5;
+				outline: none;
+			}
+	
+			.searchbtn:focus {
+				display: none 
+				color: black;
+				background-color: white;
+				color: white;
+				transition: 0s;
+				outline: none;
+			}
+			
+			.content-advert {
+				width: 100%;
+				height: 100%;
+			}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="https://student-zone.netlify.app/app/desktop">Spotlight</a>
+  <a class="active" href="#news">Apps</a>
+  <a href="#contact">Radio</a>
+  <a href="https://news.google.com/">News</a>
+</div>
+
+<div class="content">
+ 
+		<iframe style="height:100%;width:100%;" src="https://student-zone.netlify.app/app/button/apps.html">
+</body>
+</html>
