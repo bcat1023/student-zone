@@ -1,6 +1,6 @@
 [[redirects]]
   from = "https://student-zone.netlify.app/Policy/Privacy"
-  to = "https://student-zone.netlify.app/policy/privacy%20policy/"
+  to = "/policy/privacy%20policy/"
   status = 404
 [[redirects]]
   from = "/*"
