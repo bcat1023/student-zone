@@ -1,26 +1,40 @@
-<html>
-	<head>
-		<title></title>
-	</head>
-	<body>
-	<video
-    id="my-video"
-    loop
-	muted
-	autoplay
-    width="1000px"
-    height="500px"
-  >
-    <source src="https://daisied-springs.000webhostapp.com/cdn/site_cdn/assets/videos/Student%20Zone%20beta%202TRIM.mp4" type="video/mp4" />
-    <p class="vjs-no-js">
-      To view this video please enable JavaScript, and consider upgrading to a
-      web browser that
-      <a href="https://videojs.com/html5-video-support/" target="_blank"
-        >supports HTML5 video</a
-      >
-    </p>
-  </video>
-<h1>Student-Zone 3 Comeing Soon</h1>
-<p>Student Zone Development Has Stopped For Student-Zone 3 Development.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Student-Zone 3 | Blog</title>
+</head>
+
+<body>
+  <div id="player" class="video-player">
+    <video onplay="autoplay" id="video" preload="auto"
+      src="https://daisied-springs.000webhostapp.com/cdn/site_cdn/assets/videos/Student%20Zone%20beta%202TRIM.mp4"
+      poster="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8AAABWVlbu7u76+vp+fn7V1dX8/Pzg4ODZ2dm2traurq7z8/NhYWE1NTWxsbHp6elPT08pKSmZmZnMzMyKiopJSUm/v7+jo6Nvb28dHR1BQUE8PDwxMTEVFRWVlZVnZ2d3d3fGxsYMDAwaGhqNjY2oWGuzAAAEmUlEQVR4nO3di1LiQBCFYQ4QV0FQUEBuShZ8/1fcuFvWinLJJH05SfX/BPmqqGHohEmnE0VRFEVRFEVRFEVRFEVRFMnVv/e+AsXuXkYrfDTOHnreFyPf4/s/3WeTQd/7kkTrZfjRdOh9VYINf/o+Wt95X5hQ/dFpYFHWio9qb30WCBwG3pdXv/vtBWBR99H7Cuu2uQwsevK+xHrlV4HA9tn7Kmu0KAEsyhq70+mvruv+9vrgfakVeyoJLJo0c8UpDyx6++V9uekNkoRNXHEmaUJg2bA9Ti8VWNSsFee5ghCTJm3HX6oIgZn3dZdvWU2IVWNWnPO/mq61a8iUo1tZCDRjAFBHiHkTVpxawmI7zr/HqSnEauEtuFZdITAiX3HqC4EXb8TFJIQY33gzLiQiLPY4vAMAISFWtCNHKSHvyFFOCDxRfjlKCjlXHFEhkPMNAISFAN2KIy5E99bbdJy8EHjzRh2lIcSUaQCgIgSWPNtxJSHRyFFNiAnJiqMnZBk5agqx+u3N6ygLKUaOykKCkaO6EBvnkaO+sFhxXLfjFkJMPUeOJkLXkaOR0HHkaCbExmkAYCf0uslhKQQ8VhxbIUb223FjocNTjuZC85GjvRDITW9yeAixtxw5ughNR45OQsORo5vQbOToJwSWJiuOpxB7i5GjqxCY6684zsJixdEeALgLsVUeOfoLgZ3qisMg1B05cgg1n3IkEQIzrQEAjRBQ+uIgEirNOJiEOrfjqIQYtV6oQSQTKnxQ2YTyyw2dENJbOD5h3nohhJ/EJRRmrRe+yv4mJhRC9icxo1D2Y8oonLdeCNHHGiiFot8XlELRkQalUPSOBqVQ9C4xpVB0YkMpbP1KMxX9AcUolB1lMAplH7lhFMpO+AmFa1Ego1D4YRtCoSyQUCg9TqQT7oSBdMKD+CPvbEL5RzPJhArPZXAJNR48YRJuVe5zEwmFZ910wrXW498sQr0/DXEIR4onvzAID6rP7hEI1Z6GIhGqnxTqLdT/I7Sv0OLEXk+hzanLjkKjg7PchGannzsJDQ+w8xFavoXAQ2j7H0sHofE/882F5ue5GAsdDuW1FSpvst2FPmdjGQqdThsyE7qdUWckdDxn0EboeVakhdDhuA9bofOZrepC93cLKAu9jk4yEzKcuK8p5Hhrgp7Q9Ri6L6kJ31lO9lYSEr2BRkfofqTnlzSENqeylE1eOGY6zLujIOQ6kL0jLiR8jYeo8JXuxQgdWSHn+3TlhFuer8CjxIQMm+yTCQl3fCvMZyLCPcPp8ueSEHK8IeBc9YUGR67VqraQaZN9sppCrk32yWoJ2TbZJ6sj5HzP2veqvw+Y7c1V58qqAknmTNd7qObLWOZM17up4lN7JlulfTqQdpN9ujzVxzHJTug5zccyyU5pnAKkmWSntCjvWzfkK/B7Zbc1e/pN9rluywHzpq0wXxqW8FG9ljK961s3ukl2asvLPsJJdnKzC74D4yQ7vcFZIOFrmqv1ePpLY006ya7UYv7Dt2nHB/R/N9nRL42cedBbudvh2647n49mwzZ9PKMoiqIoiqIoiqIoiqIoiqLm9QfLUFe4shG+ygAAAABJRU5ErkJggg=="
+      class="video"></video>
+
+    <div class="player-controls">
+      <div class="video-progress">
+        <div id="juisebar" class="video-progress-filled"></div>
+      </div>
+
+      <button id="ppbutton" class="play-button" title="Play">►</button>
+
+      <input type="range" class="volume" min="0" max="1" step="0.01" value="1" />
+
+      <div class="time">
+        <span class="current">0:00</span> / <span class="duration">0:00</span>
+      </div>
+    </div>
+  </div>
+  <script src="./video.js"></script>
+  <div class="text">
+    <h1>Student-Zone 3 Coming Soon</h1>
+    <p>Student Zone Development Has Stopped For Student-Zone 3 Development.</p>
+  </div>
+</body>
+
 </html>
